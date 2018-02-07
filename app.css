@@ -1,0 +1,35 @@
+/*
+Universidad del Valle de Guatemala 
+Programacion de plataformas moviles y juegos 
+Proyecto #1 
+Daniel Garcia, 14152 
+*/
+
+header
+{
+    background-color: #c9c9c9;
+    color: #202020;
+    padding: 20px;
+    text-align: center;
+}
+body {
+    background-color: #c9c9c9;
+}
+
+/* Se importan fonts para utilizar en la pagina.*/
+@font-face { font-family: typography; src: url("images/typography.ttf");}
+h2
+{
+font-family: typography;
+}
+@font-face { font-family: steelfish; src: url("images/steelfish.ttf");}
+h2
+{
+font-family: steelfish;
+}
+@font-face { font-family: walkway; src: url("images/walkway.ttf");}
+h3
+{
+font-family: walkway;
+}
+

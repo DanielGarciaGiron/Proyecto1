@@ -1,0 +1,308 @@
+<!-- Universidad del Valle de Guatemala -->
+<!-- Programacion de plataformas moviles y juegos -->
+<!-- Proyecto #1 -->
+<!-- Daniel Garcia, 14152 -->
+
+<!doctype html>
+<html>
+
+
+<head>
+    <title>Daniel Garcia - Curriculum Vitae</title>
+    <!-- Link de bootstrap para obtener la pantalla en la que esta, es decir detectar si es movil, tablet o pc.
+        tambien utilizo w3schools para containers con color-->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" rel="text/javascript" />    
+    <link href="app.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
+    <meta name="viewport" content="width=device-width"/>
+    <meta charset="UTF-8"> 
+    <!--fonts personalizadas para usar en los titulos. -->
+    <style>    
+    @font-face{font-family: typography;src: url("typography.ttf");}
+    h1{ font-family: typography }
+    @font-face{font-family: steelfish;src: url("steelfish.ttf");}
+    h2{ font-family: steelfish }
+    @font-face{font-family: walkway;src: url("walkway.ttf");}
+    h3{ font-family: walkway }
+    </style>
+</head>
+
+
+<body>
+    <body style="font-family:verdana;">
+
+    <!-- Header es siempre el mismo para las distintas versiones de la pagina. -->    
+    <header class="container-fluid">
+        <h1>Jose Daniel Garcia Giron</h1>
+        <img src="images/test.jpg" class="w3-circle" alt="Photograph" style="width:100%;max-width:200px" >
+    </header> 
+
+<!--
+    Para tener los cuatro diseños distintos, verifico la variable obtenida por bootstrap, y muesto la version de la pagina 
+    segun corresponda. La diferencia entre las cuatro versiones es que los contenedores utilizados de bootstrap 
+    tienen tamaños predefinidos para tipos de pantallas en especifico, lo cual cambio para que se muestre la informacion 
+    con las dimensiones adecuadas. <div class="col-xs-4"> donde xs significa extra small
+    hace que el container se adapte a dimensiones de celular. Esta variable puede ser xs, sm, md o lg. Al final de toda la 
+    informacion, imprimo en pantalla la variable de tamaño de pantalla obtenida por bootstrap.
+ -->
+
+<!--##################### Extra Small Screens, Phones ######################################################################## -->   
+        <div class="visible-xs hidden-sm hidden-md hidden-lg">
+                <div class="w3-container w3-light-gray">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-xs-4">
+                                    <h2>Personal Profile</h2>
+                                </div>
+                                <div class="col-xs-8">
+                                    <p><b>Birth date:</b> December 26, 1995</p>
+                                    <p><b>Contact information:</b> gar14152@uvg.edu.gt</p>
+                                    <p><b>Phone number:</b> 32572694</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-container w3-gray">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-xs-4">
+                                    <h2>Work Experience</h2>
+                                </div>
+                                <div class="col-xs-8">
+                                    <h3>Customer Service</h3>
+                                    <p><b>2014:</b> Staff at the Lego Fun Fest held in Miraflores Mall</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-container w3-light-gray">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-xs-4">
+                                    <h2>Achievements</h2>
+                                </div>
+                                <div class="col-xs-8">
+                                    <ul>
+                                        <li><p><b>2009:</b> Destination Imagination 1st place national competition.</p></li>
+                                        <li><p><b>2010:</b> Destination Imagination 1st place national competition.</p></li>
+                                        <li><p><b>2010:</b> Destination Imagination 21st place Global Finals, Knoxville Tennessee.</p></li>
+                                        <li><p><b>2013:</b> Men's Soccer 2013 MVP, Colegio Decroly Americano</p></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-container w3-gray">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-xs-4">
+                                    <h2>Education</h2>
+                                </div>
+                                <div class="col-xs-8">
+                                    <h3>High School</h3>
+                                    <p><b>2001 - 2013:</b> Colegio Decroly Americano:Bachelor of Science and Letters. </p>
+                                    <h3>University</h3>
+                                    <p><b>2014 - Present:</b> Universidad del Valle de Guatemala: Mechatronic Engineering. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            Current Display: Extra Small Screen, phone. "XS"
+        </div>
+        
+<!--#####################  Small Screens, Tablets  ######################################################## -->        
+        <div class="hidden-xs visible-sm hidden-md hidden-lg">
+                <div class="w3-container w3-light-gray">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <h2>Personal Profile</h2>
+                                </div>
+                                <div class="col-sm-8">
+                                    <p><b>Birth date:</b> December 26, 1995</p>
+                                    <p><b>Contact information:</b> gar14152@uvg.edu.gt</p>
+                                    <p><b>Phone number:</b> 32572694</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-container w3-gray">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <h2>Work Experience</h2>
+                                </div>
+                                <div class="col-sm-8">
+                                    <h3>Customer Service</h3>
+                                    <p><b>2014:</b> Staff at the Lego Fun Fest held in Miraflores Mall</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-container w3-light-gray">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <h2>Achievements</h2>
+                                </div>
+                                <div class="col-sm-8">
+                                    <ul>
+                                        <li><p><b>2009:</b> Destination Imagination 1st place national competition.</p></li>
+                                        <li><p><b>2010:</b> Destination Imagination 1st place national competition.</p></li>
+                                        <li><p><b>2010:</b> Destination Imagination 21st place Global Finals, Knoxville Tennessee.</p></li>
+                                        <li><p><b>2013:</b> Men's Soccer 2013 MVP, Colegio Decroly Americano</p></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-container w3-gray">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <h2>Education</h2>
+                                </div>
+                                <div class="col-sm-8">
+                                    <h3>High School</h3>
+                                    <p><b>2001 - 2013:</b> Colegio Decroly Americano:Bachelor of Science and Letters. </p>
+                                    <h3>University</h3>
+                                    <p><b>2014 - Present:</b> Universidad del Valle de Guatemala: Mechatronic Engineering. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            Current Display: Small Screen, tablet. "SM"
+        </div>
+
+<!--##################### Medium Screens, Desktops ################################################################### -->   
+        <div class="hidden-xs hidden-sm visible-md hidden-lg">
+                <div class="w3-container w3-light-gray">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <h2>Personal Profile</h2>
+                                </div>
+                                <div class="col-md-8">
+                                    <p><b>Birth date:</b> December 26, 1995</p>
+                                    <p><b>Contact information:</b> gar14152@uvg.edu.gt</p>
+                                    <p><b>Phone number:</b> 32572694</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-container w3-gray">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <h2>Work Experience</h2>
+                                </div>
+                                <div class="col-md-8">
+                                    <h3>Customer Service</h3>
+                                    <p><b>2014:</b> Staff at the Lego Fun Fest held in Miraflores Mall</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-container w3-light-gray">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <h2>Achievements</h2>
+                                </div>
+                                <div class="col-md-8">
+                                    <ul>
+                                        <li><p><b>2009:</b> Destination Imagination 1st place national competition.</p></li>
+                                        <li><p><b>2010:</b> Destination Imagination 1st place national competition.</p></li>
+                                        <li><p><b>2010:</b> Destination Imagination 21st place Global Finals, Knoxville Tennessee.</p></li>
+                                        <li><p><b>2013:</b> Men's Soccer 2013 MVP, Colegio Decroly Americano</p></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-container w3-gray">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <h2>Education</h2>
+                                </div>
+                                <div class="col-md-8">
+                                    <h3>High School</h3>
+                                    <p><b>2001 - 2013:</b> Colegio Decroly Americano:Bachelor of Science and Letters. </p>
+                                    <h3>University</h3>
+                                    <p><b>2014 - Present:</b> Universidad del Valle de Guatemala: Mechatronic Engineering. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>        
+                Current Display: Medium Screen, laptop. "MD"
+        </div>
+
+<!--##################### Large Screens, Larger Desktops  ################################################################## -->   
+        <div class="hidden-xs hidden-sm hidden-md visible-lg">
+                <div class="w3-container w3-light-gray">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <h2>Personal Profile</h2>
+                                </div>
+                                <div class="col-lg-8">
+                                    <p><b>Birth date:</b> December 26, 1995</p>
+                                    <p><b>Contact information:</b> gar14152@uvg.edu.gt</p>
+                                    <p><b>Phone number:</b> 32572694</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-container w3-gray">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <h2>Work Experience</h2>
+                                </div>
+                                <div class="col-lg-8">
+                                    <h3>Customer Service</h3>
+                                    <p><b>2014:</b> Staff at the Lego Fun Fest held in Miraflores Mall</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-container w3-light-gray">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <h2>Achievements</h2>
+                                </div>
+                                <div class="col-lg-8">
+                                    <ul>
+                                        <li><p><b>2009:</b> Destination Imagination 1st place national competition.</p></li>
+                                        <li><p><b>2010:</b> Destination Imagination 1st place national competition.</p></li>
+                                        <li><p><b>2010:</b> Destination Imagination 21st place Global Finals, Knoxville Tennessee.</p></li>
+                                        <li><p><b>2013:</b> Men's Soccer 2013 MVP, Colegio Decroly Americano</p></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-container w3-gray">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <h2>Education</h2>
+                                </div>
+                                <div class="col-lg-8">
+                                    <h3>High School</h3>
+                                    <p><b>2001 - 2013:</b> Colegio Decroly Americano:Bachelor of Science and Letters. </p>
+                                    <h3>University</h3>
+                                    <p><b>2014 - Present:</b> Universidad del Valle de Guatemala: Mechatronic Engineering. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>    
+                Current Display: Large Screen, desktop. "LG"
+        </div>
+
+</body>
+
+</html>
